@@ -1,0 +1,30 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #FFB657;
+    color:#066194
+}
+
+h1,h2,h4,h4,h5,h6 {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+h1 {
+    font-size:30pt;
+}
+h2 {
+    font-size:22pt;
+}
+
+header {
+    text-align:center;
+}
+#hero,footer {
+    background-color: #ffc859;
+    text-align:center;
+    padding: 10px;
+}
+#hero img {
+    width:300px;
+}
+#bio {
+    text-align:center;
+}
