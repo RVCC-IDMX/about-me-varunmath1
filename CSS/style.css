@@ -6,7 +6,9 @@ body{
 
 h1,h2,h4,h4,h5,h6 {
     font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align:center;
 }
+
 h1 {
     font-size:30pt;
 }
@@ -25,6 +27,11 @@ header {
 #hero img {
     width:300px;
 }
+
 #bio {
     text-align:center;
 }
+
+
+    
+
