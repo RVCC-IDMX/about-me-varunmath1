@@ -52,6 +52,7 @@ header {
 
 #Gallery {
     border: 2px solid #FF00FF	
+    margin-bottom:2rem;
 }
 
 #gallery img {
@@ -61,4 +62,17 @@ header {
 
 #gallery figure {
 text-align:center;
+}
+
+
+/* Literature */
+#lit {
+    border: 2px solid #FF00FF
+
+}
+
+#lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
 }
