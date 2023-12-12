@@ -170,12 +170,78 @@
 
     </main>
 
-    <footer>
-
-        &copy; 2023 - Varun Mathur
-
-    </footer>
+    
 </body>
 
 </html>
 
+<h2>Contact us:</h2>
+
+        <section id="Contact">
+
+            <h2>Information paper</h2>
+
+            <form id="Contact-form" name="ContactForm" method="post" data-netlify="true">
+
+                <fieldset>
+                    <legend>contact form</legend>
+                    <div id="formElements">
+
+                        <!--Name-->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" placeholder="name" required>
+                        <br>
+                        <br>
+                        <!--Email-->
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br>
+                        <br>
+                        <!--Phone-->
+                        <label for="Phone">phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+                        <br>
+                        <br>
+                        <!--phone type-->
+                        <label for="phonetype">phone Type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="" selected> select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="work">work</option>
+                            <option value="Home">Home</option>
+                        </select>
+                        <br>
+                        <br>
+                        <!--Message-->
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" placeholder="Type here" rows="8"></textarea>
+
+                        <!--Reply-->
+                        <fieldset>
+                            <legend> Would you like a reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply">
+                                    <label for="message-yes">Yes.</label>
+
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" checked>
+                                    <label for="message-no">
+                                        No, thanks.
+                                    </label>
+
+                                </li>
+
+                            </ul>
+
+                        </fieldset>
+                        <!--Submit-->
+                        <button type="submit">send</button>
+
+                        <footer>
+
+                            &copy; 2023 - Varun Mathur
+                    
+                        </footer>
