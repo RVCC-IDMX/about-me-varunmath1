@@ -128,7 +128,14 @@ columns: 40rem;
         display: block;
     }
 }
-
-/*Video*/
+/* contact form*/
+#contact {
+    font-family: Roboto, sans-serif;
+    color: rgb(5, 22, 5);
+    font-size: x-large;
+    border: 5px solid;
+    background-color: darkgray;
+    padding: 1px;
+}
 
  
