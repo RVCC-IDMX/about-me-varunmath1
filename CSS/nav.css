@@ -1,0 +1,225 @@
+/* make scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+ get rid of padding & sizing on body so
+ header is at top
+*/
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar-links a{
+text-decoration: none;
+padding: 0.5%;
+}
+.navbar-links a:hover,
+.navbar-links a:focus{
+color: whitesmoke;
+background-color: rgb(102, 10, 171);
+border-radius: 10px;
+outline: none;
+filter: invert(1);
+}
+
+
+/* add some padding back to rest of page */
+main {
+    padding: 2vw;
+}
+
+/* navbar */
+.navbar {
+    background-color: aquamarine;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 6vw;
+    width: 6vw;
+    size: 2px;
+}
+
+.logo h1 {
+    font-size: 2em;
+}
+
+
+/* navigation list */
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+
+/*  
+ style all a tags in header 
+ and then on hover
+*/
+.navbar-links a {
+    color: rgb(9, 2, 37);
+    background-attachment: rgb(135, 222, 150);
+    font-size: 2.5rem;
+    padding: 1rem 1.25rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-links a:hover .navbar-links a:focus {
+    color: rgb(138, 222, 135);
+    background-color: aquamarine;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* 
+media query for non-mobile nav bar
+min-width set to width of nav elements 
+such that no text wraps 
+*/
+@media screen and (min-width: 60rem) {
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*positioning Hamburger icon*/
+.nav_toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    align-items: right;
+}
+
+.close {
+    display: none;
+
+}
+
+.nav_toggle {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.nav_checkbox {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.nav_menu li {
+    list-style: none;
+    display: none;
+}
+
+.nav_menu :first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: rgb(240, 73, 73);
+    font-size: 1.2rem;
+}
+
+.nav img {
+    width: 1.5rem;
+    fill: aliceblue;
+}
+
+#nav_checkbox:checked ~ ul.navbar-links li {
+    display: block;
+}
+
+.close {
+    display:none;
+}
+#nav_checkbox:checked ~ .nav_toggle .close {
+    display: block;
+}
+.menu{
+    display: block;
+}
+#nav_checkbox:checked ~ .nav_toggle .menu {
+    display: none;
+}
+.close {
+    display: none;
+}
+.navbar-links {
+    display: none;
+}
+
+#nav_checkbox:checked ~ .navbar-links {
+    display: block;
+}
+
+
+@media screen and (min-width:60rem) {
+
+    .nav,
+    .nav_toggle,
+    .nav_menu {
+        flex-direction:row;
+        background-color: whitesmoke;
+    }
+
+    li {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav_toggle {
+        display:none;
+    }
+
+    .navbar-links {
+        display:block;
+    }
+
+}
